@@ -34,7 +34,7 @@ echo "alias rbrns='source ~/.bashrc'" >> ~/.bashrc
 
 echo "alias die='shutdown now'" >> ~/.bashrc
 echo "alias rbt='reboot'" >> ~/.bashrc
-echo "alias e='exit'" >> ~/.bashrc
+echo "alias x='exit'" >> ~/.bashrc
 echo "alias brv='brave browser'" >> ~/.bashrc
 echo "alias ghub='github-desktop'" >> ~/.bashrc
 
