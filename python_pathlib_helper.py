@@ -9,6 +9,9 @@ print(my_path.name) #     Desktop     | file.txt
 print(my_path.parent) #   /path/to    | /path/to
 print(my_path.suffix) #   ''          | .txt
 
+#Stats object with metadata and stuff
+my_path.stat()
+
 # Returns text that is contained in path
 print(my_path.read_text()) #Only on file!
 

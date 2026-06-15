@@ -29,10 +29,15 @@ https://code.visualstudio.com/docs/setup/linux
 https://github.com/shiftkey/desktop?tab=readme-ov-file#installation-via-package-manager
 
 ##Aliasing
+echo "alias rbrne='nano ~/.bashrc'" >> ~/.bashrc
+echo "alias rbrns='source ~/.bashrc'" >> ~/.bashrc
+
 echo "alias die='shutdown now'" >> ~/.bashrc
 echo "alias rbt='reboot'" >> ~/.bashrc
+echo "alias e='exit'" >> ~/.bashrc
 echo "alias brv='brave browser'" >> ~/.bashrc
 echo "alias ghub='github-desktop'" >> ~/.bashrc
+
 source ~/.bashrc
 
 

@@ -48,7 +48,7 @@ print(type(stats))
 accessed = str(datetime.fromtimestamp(stats.st_atime))
 modified = str(datetime.fromtimestamp(stats.st_mtime))
 changed = str(datetime.fromtimestamp(stats.st_ctime))
-created = str(datetime.fromtimestamp(stats.st_birthtime))
+created = str(datetime.fromtimestamp(stats.st_birthtime)) #can cause problems
 print(accessed)
 print(modified)
 print(changed)
