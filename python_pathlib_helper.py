@@ -8,6 +8,7 @@ my_path = my_path / "file.txt"
 print(my_path.name) #     Desktop     | file.txt
 print(my_path.parent) #   /path/to    | /path/to
 print(my_path.suffix) #   ''          | .txt
+print(my_path.stem)   #   Desktop     | file
 
 #Stats object with metadata and stuff
 my_path.stat()
