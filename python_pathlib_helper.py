@@ -32,6 +32,7 @@ print(my_path.read_text()) #Returns absolute path
 #Ints
 #Creates if doesn't exist and writes (not appends!). Only files
 my_path.write_text("cibi cibi")
+my_path.stat().st_size #Returns file size in bytes
 
 #Opening Path objects!
 with my_path.open("w", encoding="utf-8") as f:
