@@ -2,7 +2,7 @@
 | total_length    = 
 | all_writing     = 
 | headline        = 
-| title_width     = 
+| title_width     = 50%
 | extra_column    = 
 
 
