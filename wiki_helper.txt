@@ -61,6 +61,12 @@ Second column content
 | extra_column    = 
 
 | title1          = 
+| note1           = 
+| writer1         = 
+| extra1          = 
+| length1         = 
+
+| title1          = 
 | length1         = 
 | title2          = 
 | length2         = 
@@ -181,4 +187,9 @@ Second column content
 
 | title24         = 
 | length24        = 
+}}
+
+
+{{Infobox album
+
 }}
