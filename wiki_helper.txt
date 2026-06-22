@@ -1,14 +1,26 @@
+Line break
+Line one<br>
+Line two
+
+
+Indentation
+: Indented text
+:: More indentation
+
+
 Sekcja
-==Section==
-===Subsection===
+== Main heading ==
+=== Subheading ===
+==== Smaller heading ====
 
 
 Tekst
-''kursywa''
-'''pogrubienie''
-&nbsp;        Non-breaking space
-{{Displayed text|http://www.link.org}}             link
-{{Official website|http://www.alicecoltrane.org}}  link
+'''bold'''
+''italic''
+'''''bold_italic'''''
+&nbsp;                               Non-breaking space
+[https://example.com Link text]      Link
+
 
 Wiki link
 [[Wiki page name]]
@@ -16,9 +28,11 @@ Wiki link
 [[George Clinton (funk musician)|George Clinton]]
 
 
-Bullet list
-*''[[Automatic Writing (album)|Automatic Writing]]'' (2004)
-*''[[AW II]]'' (2007)
+List
+* Bullet item
+** Nested bullet
+# Numbered item
+## Nested numbered item
 
 
 Columns
