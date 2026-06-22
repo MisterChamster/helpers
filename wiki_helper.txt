@@ -194,3 +194,43 @@ Second column content
 {{Infobox album
 
 }}
+
+
+Referencje i cytacje
+
+== References ==
+{{Reflist}}
+
+<ref name="source_name">{{cite web
+ | url          =
+ | title        =
+ | website      =
+ | author       =
+ | date         =
+ | access-date  =
+}}</ref>
+
+<ref name="source_name">{{cite book
+ | last         =
+ | first        =
+ | author-link  =
+ | title        =
+ | publisher    =
+ | year         =
+ | isbn         =
+ | page         =
+}}</ref>
+
+<ref name="source_name">{{cite magazine
+ | last         =
+ | first        =
+ | title        =
+ | magazine     =
+ | date         =
+ | volume       =
+ | issue        =
+ | pages        =
+ | url          =
+ | access-date  =
+}}</ref>
+
