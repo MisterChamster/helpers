@@ -279,7 +279,17 @@ Referencje i cytacje
 Rating
 == Critical reception ==
 {{Album ratings
-| rev1 = [[AllMusic]]
-| rev1Score = {{Rating|4.5|5}}
+| rev1          = [[AllMusic]]
+| rev1Score     = {{Rating|4.5|5}}
+| rev2          = 
+| rev2Score     = 
+| rev3          = 
+| rev3Score     = 
+| rev4          = 
+| rev4Score     = 
+| rev5          = 
+| rev5Score     = 
+| rev6          = 
+| rev6Score     = 
 }}
 
