@@ -53,18 +53,19 @@ Second column content
 {{col-end}}
 
 
-{{ track listing
-| total_length    = 
-| all_writing     = 
-| headline        = 
-| title_width     = 50%
-| extra_column    = 
 
 | title1          = 
 | note1           = 
 | writer1         = 
 | extra1          = 
 | length1         = 
+
+{{ track listing
+| total_length    = 
+| title_width     = 50%
+| headline        = 
+| all_writing     = 
+| extra_column    = 
 
 | title1          = 
 | length1         = 
