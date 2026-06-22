@@ -243,35 +243,43 @@ Referencje i cytacje
 {{Reflist}}
 
 <ref name="source_name">{{cite web
- | url          =
- | title        =
- | website      =
- | author       =
- | date         =
- | access-date  =
+ | url          = 
+ | title        = 
+ | website      = 
+ | author       = 
+ | date         = 
+ | access-date  = 
 }}</ref>
 
 <ref name="source_name">{{cite book
- | last         =
- | first        =
- | author-link  =
- | title        =
- | publisher    =
- | year         =
- | isbn         =
- | page         =
+ | last         = 
+ | first        = 
+ | author-link  = 
+ | title        = 
+ | publisher    = 
+ | year         = 
+ | isbn         = 
+ | page         = 
 }}</ref>
 
 <ref name="source_name">{{cite magazine
- | last         =
- | first        =
- | title        =
- | magazine     =
- | date         =
- | volume       =
- | issue        =
- | pages        =
- | url          =
- | access-date  =
+ | last         = 
+ | first        = 
+ | title        = 
+ | magazine     = 
+ | date         = 
+ | volume       = 
+ | issue        = 
+ | pages        = 
+ | url          = 
+ | access-date  = 
 }}</ref>
+
+
+Rating
+== Critical reception ==
+{{Album ratings
+| rev1 = [[AllMusic]]
+| rev1Score = {{Rating|4.5|5}}
+}}
 
