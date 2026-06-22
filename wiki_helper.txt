@@ -1,3 +1,26 @@
+Sekcja
+==Section==
+===Subsection===
+
+
+Tekst
+''kursywa''
+'''pogrubienie''
+&nbsp;        Non-breaking space
+{{Displayed text|http://www.link.org}}             link
+{{Official website|http://www.alicecoltrane.org}}  link
+
+Wiki link
+[[Wiki page name]]
+[[Wiki page name|Displayed Text]]
+[[George Clinton (funk musician)|George Clinton]]
+
+
+Bullet list
+*''[[Automatic Writing (album)|Automatic Writing]]'' (2004)
+*''[[AW II]]'' (2007)
+
+
 Columns
 <div style="column-count: 3;">
 * item
@@ -5,7 +28,7 @@ Columns
 * item
 </div>
 
-albo 
+albo
 
 {{col-begin}}
 {{col-break}}
