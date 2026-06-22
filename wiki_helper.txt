@@ -35,6 +35,20 @@ List
 ## Nested numbered item
 
 
+Table
+{| class="wikitable"
+|-
+! Heading 1
+! Heading 2
+|-
+| Cell 1
+| Cell 2
+|-
+| Cell 1
+| Cell 2
+|}
+
+
 Columns
 <div style="column-count: 3;">
 * item
@@ -192,12 +206,27 @@ Second column content
 
 
 {{Infobox album
-
+| name        =
+| type        = studio
+| artist      =
+| cover       =
+| alt         =
+| released    =
+| recorded    =
+| studio      =
+| genre       =
+| length      =
+| language    =
+| label       =
+| producer    =
+| prev_title  =
+| prev_year   =
+| next_title  =
+| next_year   =
 }}
 
 
 Referencje i cytacje
-
 == References ==
 {{Reflist}}
 
