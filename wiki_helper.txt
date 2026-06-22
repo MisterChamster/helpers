@@ -206,23 +206,35 @@ Second column content
 
 
 {{Infobox album
-| name        =
+| name        = 
 | type        = studio
-| artist      =
-| cover       =
-| alt         =
-| released    =
-| recorded    =
-| studio      =
-| genre       =
-| length      =
-| language    =
-| label       =
-| producer    =
-| prev_title  =
-| prev_year   =
-| next_title  =
-| next_year   =
+| artist      = 
+| cover       = 
+| alt         = 
+| released    = 
+| recorded    = 
+| studio      = 
+| genre       = 
+| length      = 
+| language    = 
+| label       = 
+| producer    = 
+
+| prev_title  = 
+| prev_year   = 
+| next_title  = 
+| next_year   = 
+
+| misc       = {{Extra chronology
+ | artist     = [[John Frusciante]] solo
+ | type       = studio
+ | prev_title = [[Curtains (John Frusciante album)|Curtains]]
+ | prev_year  = 2005
+ | title      = The Empyrean
+ | year       = 2009
+ | next_title = [[Letur-Lefr]]
+ | next_year  = 2012
+}}
 }}
 
 
