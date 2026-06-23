@@ -67,19 +67,31 @@ Second column content
 {{col-end}}
 
 
-
 | title1          = 
 | note1           = 
 | writer1         = 
+| lyrics1         = 
+| music1          = 
 | extra1          = 
 | length1         = 
+
+| extra_column    = 
+
+| title_width     = 
+| writing_width   = 
+| music_width     = 
+| lyrics_width    = 
+| extra_width     = 
+
+| all_writing     = 
+| all_lyrics      = 
+| all_music       = 
+
 
 {{ track listing
 | total_length    = 
 | title_width     = 50%
 | headline        = 
-| all_writing     = 
-| extra_column    = 
 
 | title1          = 
 | length1         = 
