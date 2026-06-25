@@ -1,3 +1,5 @@
+{{Use mdy dates|date=May 2025}}
+
 Line break
 Line one<br>
 Line two
