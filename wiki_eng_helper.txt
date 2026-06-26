@@ -307,3 +307,84 @@ Rating
 | rev6Score     = 
 }}
 
+
+{{Navbox musical artist
+| name       = {{subst:PAGENAME}}
+| state      = 
+| title      = 
+| background = **Mandatory** Use one of: solo_singer, non_vocal_instrumentalist, non_performing_personnel, group_or_band, classical_ensemble, or temporary
+| bodyclass  = hlist
+| above      = 
+
+| group1     = 
+| list1      = 
+
+| group2     = 
+| list2      = 
+
+ ...
+
+| group20    = 
+| list20     = 
+
+| below      = 
+}}
+
+{{Navbox musical artist
+| name       = Led Zeppelin
+| title      = [[Led Zeppelin]]
+| background = group_or_band
+| bodyclass  = hlist
+| above      =
+*'''[[Jimmy Page]]'''
+*'''[[Robert Plant]]'''
+*'''[[John Paul Jones (musician)|John Paul Jones]]'''
+*'''[[John Bonham]]'''
+
+| group1     = Studio albums
+| list1      =
+*''[[Led Zeppelin (album)|Led Zeppelin]]''
+*''[[Led Zeppelin II]]''
+*''[[Led Zeppelin III]]''
+*''[[Led Zeppelin IV]]''
+*''[[Houses of the Holy]]''
+*''[[Physical Graffiti]]''
+*''[[Presence (album)|Presence]]''
+*''[[In Through the Out Door]]''
+
+| group2     = Live albums
+| list2      =
+*''[[The Song Remains the Same (album)|The Song Remains the Same]]''
+*''[[BBC Sessions (Led Zeppelin album)|BBC Sessions]]''
+*''[[How the West Was Won (Led Zeppelin album)|How the West Was Won]]''
+
+| group3     = Compilations
+| list3      =
+*''[[Coda (album)|Coda]]''
+*''[[Led Zeppelin (box set)|Box Set]]''
+*''[[Led Zeppelin Remasters|Remasters]]''
+*''[[Led Zeppelin Box Set, Vol. 2|Box Set 2]]''
+*''[[The Complete Studio Recordings (Led Zeppelin)|Complete Studio Recordings]]''
+*''[[Early Days: Best of Led Zeppelin Volume One]]''
+*''[[Latter Days: Best of Led Zeppelin Volume Two]]''
+*''[[Mothership (album)|Mothership]]''
+
+| group4     = Films
+| list4      =
+*''[[The Song Remains the Same (film)|The Song Remains the Same]]''
+*''[[Led Zeppelin (DVD)|Led Zeppelin DVD]]''
+
+| group5     = Related articles
+| list5      =
+*[[Led Zeppelin discography|Discography]]
+*[[Peter Grant (music manager)|Peter Grant]]
+*[[Richard Cole]]
+*[[Swan Song Records]]
+*[[The Yardbirds]]
+*[[XYZ (UK band)|XYZ]]
+*[[The Firm (rock band)|The Firm]]
+*[[Page and Plant]]
+*[[Strange Sensation]]
+*[[Led Zeppelin bootleg recordings|Bootlegs]]
+*[[Led Zeppelin concerts|Concerts]]
+}}
