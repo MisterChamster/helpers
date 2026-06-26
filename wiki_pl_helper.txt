@@ -1,0 +1,115 @@
+
+
+{{Lista utworów2
+| rok       = 
+| tytuł     = 
+| nota      = 
+| 1-kolumna = 
+| 2-kolumna = 
+| 3-kolumna = 
+| 4-kolumna = 
+| zwinięte  = 
+| suma      = 
+| szerokość = 
+|span-id|tytuł|nota|1-kol|2-kol|3-kol|4-kol|czas
+}}
+
+
+{{Album muzyczny infobox
+ |rodzaj albumu             = 
+ |tytuł                     = 
+ |okładka                   = 
+ |wykonawca                 = 
+ |2. wykonawca              = 
+ |3. wykonawca              = 
+ |4. wykonawca              = 
+ |5. wykonawca              = 
+ |6. wykonawca              = 
+ |wydany                    = 
+ |nagrywany                 = 
+ |gatunek                   = 
+ |długość                   = 
+ |wytwórnia                 = 
+ |producent                 = 
+ |reżyser                   = 
+ |oceny                     = 
+ |wydanie 1                 = 
+ |rok wydania               = 
+ |poprzedni album           = 
+ |rok poprzedniego albumu   = 
+ |następny album            = 
+ |rok następnego albumu     = 
+ |wydanie 2                 = 
+ |rok wydania 2             = 
+ |poprzedni album 2         = 
+ |rok poprzedniego albumu 2 = 
+ |następny album 2          = 
+ |rok następnego albumu 2   = 
+ |wydanie 3                 = 
+ |rok wydania 3             = 
+ |poprzedni album 3         = 
+ |rok poprzedniego albumu 3 = 
+ |następny album 3          = 
+ |rok następnego albumu 3   = 
+ |poprzedni album 4         = 
+ |rok poprzedniego albumu 4 = 
+ |następny album 4          = 
+ |rok następnego albumu 4   = 
+ |poprzedni album 5         = 
+ |rok poprzedniego albumu 5 = 
+ |następny album 5          = 
+ |rok następnego albumu 5   = 
+ |poprzedni album 6         = 
+ |rok poprzedniego albumu 6 = 
+ |następny album 6          = 
+ |rok następnego albumu 6   = 
+ |1. singel                 = 
+ |data 1. singla            = 
+ |2. singel                 = 
+ |data 2. singla            = 
+ |3. singel                 = 
+ |data 3. singla            = 
+ |4. singel                 = 
+ |data 4. singla            = 
+ |5. singel                 = 
+ |data 5. singla            = 
+ |6. singel                 = 
+ |data 6. singla            = 
+ |7. singel                 = 
+ |data 7. singla            = 
+ |8. singel                 = 
+ |data 8. singla            = 
+ |9. singel                 = 
+ |data 9. singla            = 
+ |10. singel                = 
+ |data 10. singla           = 
+ |11. singel                = 
+ |data 11. singla           = 
+ |12. singel                = 
+ |data 12. singla           = 
+}}
+
+{{Album muzyczny infobox
+ |rodzaj albumu             = 
+ |tytuł                     = 
+ |okładka                   = 
+ |wykonawca                 = 
+ |wydany                    = 
+ |nagrywany                 = 
+ |gatunek                   = 
+ |długość                   = 
+ |wytwórnia                 = 
+ |producent                 = 
+ |oceny                     = 
+ |rok wydania               = 
+ |poprzedni album           = 
+ |rok poprzedniego albumu   = 
+ |następny album            = 
+ |rok następnego albumu     = 
+ |1. singel                 = 
+ |data 1. singla            = 
+ |2. singel                 = 
+ |data 2. singla            = 
+ |3. singel                 = 
+ |data 3. singla            = 
+}}
