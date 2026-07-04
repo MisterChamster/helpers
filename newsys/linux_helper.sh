@@ -38,6 +38,12 @@ echo "alias x='exit'" >> ~/.bashrc
 echo "alias brv='brave browser'" >> ~/.bashrc
 echo "alias ghub='github-desktop'" >> ~/.bashrc
 
+echo "alias ytd='/home/root-username/scripts/ytd-fast.sh'" >> ~/.bashrc
+echo "alias ytdf='/home/root-username/scripts/ytd.sh'" >> ~/.bashrc
+echo "alias mdw='/home/root-username/scripts/md-worker.sh'" >> ~/.bashrc
+echo "alias imgw='/home/root-username/scripts/img-worker.sh'" >> ~/.bashrc
+echo "alias aimg='/home/root-username/scripts/img-to-audio.sh'" >> ~/.bashrc
+
 source ~/.bashrc
 
 
