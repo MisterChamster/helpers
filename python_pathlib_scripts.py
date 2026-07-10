@@ -65,3 +65,19 @@ def is_filetype_in_dir(
             not node.name.startswith(".")):
             return True
     return False
+
+
+
+class Recurrer:
+    iter: int
+
+    def recurrer_setup(self, dir_path: Path) -> int:
+        self.iter = 0
+        self.__recurrer(dir_path)
+        return self.iter
+
+    def __recurrer(self, dir_path: Path):
+        self.iter += 1
+        dirs_list = get_dirs_from_dir(dir_path)
+        for dir_path in dirs_list:
+            self.__recurrer(dir_path)
