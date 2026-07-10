@@ -67,6 +67,14 @@ def is_filetype_in_dir(
     return False
 
 
+def rename_node(
+        node_path: Path, new_name: str, new_ext: str|None = None
+        ) -> None:
+    new_filepath = node_path.with_stem(new_name)
+    if new_ext is not None:
+        new_filepath.with_suffix(new_ext)
+    node_path.rename(new_filepath)
+
 
 class Recurrer:
     iter: int
@@ -76,7 +84,7 @@ class Recurrer:
         self.__recurrer(dir_path)
         return self.iter
 
-    def __recurrer(self, dir_path: Path):
+    def __recurrer(self, dir_path: Path) -> None:
         self.iter += 1
         dirs_list = get_dirs_from_dir(dir_path)
         for dir_path in dirs_list:
