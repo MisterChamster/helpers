@@ -43,12 +43,34 @@ example.sort(reverse=True)
 example.sort(key=len)       # Sorts by el length
 example.reverse()
 example.clear()      # Makes list into []
+del example[1]
+del example[1:4]
+del example
+
+
+
+#Constructor
+word = "abcd"
+letters = list(word)     # ["a", "b", "c", "d"]
+
+numbers = (1, 2, 3)
+lst = list(numbers)
+
+# Converts ANY!! iterable to list
+list(range(5))                                   # [0, 1, 2, 3, 4]
+list(enumerate(["a", "b", "c"]))                 # [(0, 'a'), (1, 'b'), (2, 'c')]
+list(map(lambda x: x * 2, [1, 2, 3]))            # [2, 4, 6]
+list(filter(lambda x: x % 2 == 0, [1, 2, 3, 4])) # [2, 4]
+list(zip([1, 2], ["a", "b"]))                    # [(1, 'a'), (2, 'b')]
+
 
 
 # New object
 example_cpy = example.copy()
 example_sorted = sorted(example)
 example_reversed = reversed(example)
+example_filtered = list(filter(lambda num: num > 4, example)) # selects
+example_transformd = list(map(lambda x: x * 2, example))      # transforms
 
 
 # Returns
@@ -59,6 +81,8 @@ min(example)
 max(example)
 sum(example)
 sorted(example)
+any(example)   # True if at least one element is truthy
+all(example)   # True if every element is truthy
 examples_cocat = example + example #[2, 3, 4, 5, 6, 7, 2, 3, 4, 5, 6, 7]
 zeros = [0] * 5   # [0, 0, 0, 0, 0]
 if 4 in example:
@@ -79,3 +103,12 @@ for index, value in enumerate(example, start=0):
 
 for num, lett in zip(example, example2): # Pairing lists!
     print(num, lett)
+
+for i in range(1, 4, 1):
+    print(i)        # start (inclusive) to stop (exclusive)
+
+
+
+import copy
+a = [[1], [2], [3]]
+b = copy.deepcopy(a)
