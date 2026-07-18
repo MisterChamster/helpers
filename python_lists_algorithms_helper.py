@@ -122,7 +122,45 @@ if True:
             write += 1
     del sorted_numbers[write:]
 
+# Time: n**2     Space: 
+# Time: n log n  Space: 
+# Time: n + k    Space: 
+# Time: nk       Space: 
+# Time:          Space: 
 
-# Sort
+# Sorting
+# Bubble sort
+# Time: n**2     Space: 1
+
+# Selection sort
+# Time: n**2     Space: 1
+
+# Insertion sort
+# Time: n**2     Space: 1
+
+# Merge sort
+# Time: n log n  Space: n
+
+# Quick sort
+# Time: n log n  Space: log n
+
+# Heap sort
+# Time: n log n  Space: 1
+
+
+# Timsort
+# Time: n log n  Space: n
+
+# Introsort
+# Time: n log n  Space: log n
+
+# Counting sort
+# Time: n + k    Space: k
+
+# Radix sort
+# Time: nk       Space: n+k
+
+# Bucket sort
+# Time: n + k    Space: n
 
 
