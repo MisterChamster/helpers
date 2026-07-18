@@ -1,3 +1,4 @@
+## Filtering/mapping
 ## Traversal
 ## Counting
 ## Search
@@ -5,10 +6,14 @@
 ## Del duplicates
 # Sort
 
+
+
 # Filtering/mapping
-# Aggregation (sum, avg, median, product)
-
-
+if True:
+    list(map(lambda x: x * 2, [1, 2, 3]))            # Mutate elements
+                                                     # [2, 4, 6]
+    list(filter(lambda x: x % 2 == 0, [1, 2, 3, 4])) # Remove elements
+                                                     # [2, 4]
 
 
 # Traversal
@@ -121,14 +126,3 @@ if True:
 # Sort
 
 
-
-
-# Filtering/mapping
-if True:
-    list(map(lambda x: x * 2, [1, 2, 3]))            # Mutate elements
-                                                     # [2, 4, 6]
-    list(filter(lambda x: x % 2 == 0, [1, 2, 3, 4])) # Remove elements
-                                                     # [2, 4]
-
-
-# Aggregation (sum, avg, median, product)
