@@ -122,37 +122,144 @@ if True:
             write += 1
     del sorted_numbers[write:]
 
-# Time: n**2     Space: 
-# Time: n log n  Space: 
-# Time: n + k    Space: 
-# Time: nk       Space: 
-# Time:          Space: 
+
+
 
 # Sorting
 # Bubble sort
 # Time: n**2     Space: 1
+def bubble_sort(numbers):
+    # numbers = numbers.copy()
+    n = len(numbers)
+
+    for i in range(n):
+        swapped = False
+        for j in range(n - 1 - i):
+            if numbers[j] > numbers[j + 1]:
+                numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+                swapped = True
+        if not swapped:
+            break
+
+    return numbers
 
 # Selection sort
 # Time: n**2     Space: 1
+def selection_sort(numbers):
+    # numbers = numbers.copy()
+    n = len(numbers)
+
+    for i in range(n):
+        min_index = i
+        for j in range(i + 1, n):
+            if numbers[j] < numbers[min_index]:
+                min_index = j
+        numbers[i], numbers[min_index] = numbers[min_index], numbers[i]
+
+    return numbers
 
 # Insertion sort
 # Time: n**2     Space: 1
+def insertion_sort(numbers):
+    # numbers = numbers.copy()
+
+    for i in range(1, len(numbers)):
+        current = numbers[i]
+        j = i - 1
+        while j >= 0 and numbers[j] > current:
+            numbers[j + 1] = numbers[j]
+            j -= 1
+        numbers[j + 1] = current
+
+    return numbers
 
 # Merge sort
 # Time: n log n  Space: n
+def merge_sort(numbers):
+    if len(numbers) <= 1:
+        return numbers
+
+    middle = len(numbers) // 2
+    left = merge_sort(numbers[:middle])
+    right = merge_sort(numbers[middle:])
+
+    return merge(left, right)
+
+def merge(left, right):
+    result = []
+    i = 0
+    j = 0
+
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+
+    result.extend(left[i:])
+    result.extend(right[j:])
+    return result
 
 # Quick sort
 # Time: n log n  Space: log n
+def quick_sort(numbers):
+    if len(numbers) <= 1:
+        return numbers
+
+    pivot = numbers[len(numbers) // 2]
+    smaller = []
+    equal = []
+    larger = []
+
+    for value in numbers:
+        if value < pivot:
+            smaller.append(value)
+        elif value > pivot:
+            larger.append(value)
+        else:
+            equal.append(value)
+
+    return quick_sort(smaller) + equal + quick_sort(larger)
 
 # Heap sort
 # Time: n log n  Space: 1
+def heap_sort(numbers):
+    numbers = numbers.copy()
+    n = len(numbers)
 
+    # Build max heap
+    for i in range(n // 2 - 1, -1, -1):
+        heapify(numbers, n, i)
+
+    # Extract largest element one by one
+    for i in range(n - 1, 0, -1):
+        numbers[0], numbers[i] = numbers[i], numbers[0]
+        heapify(numbers, i, 0)
+
+    return numbers
+
+def heapify(numbers, heap_size, root):
+    largest = root
+    left = 2 * root + 1
+    right = 2 * root + 2
+
+    if left < heap_size and numbers[left] > numbers[largest]:
+        largest = left
+
+    if right < heap_size and numbers[right] > numbers[largest]:
+        largest = right
+
+    if largest != root:
+        numbers[root], numbers[largest] = numbers[largest], numbers[root]
+        heapify(numbers, heap_size, largest)
 
 # Timsort
 # Time: n log n  Space: n
-
-# Introsort
-# Time: n log n  Space: log n
+# Begins with quick sort but switches to heap sort if quick
+# sort appears to be heading toward its worst-case behavior
+numbers.sort()
 
 # Counting sort
 # Time: n + k    Space: k
