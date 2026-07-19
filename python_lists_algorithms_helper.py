@@ -4,7 +4,7 @@
 ## Search
 ## Min/max
 ## Del duplicates
-# Sort
+## Sort
 
 
 
@@ -121,8 +121,6 @@ if True:
             sorted_numbers[write] = sorted_numbers[read]
             write += 1
     del sorted_numbers[write:]
-
-
 
 
 # Sorting
@@ -263,11 +261,63 @@ numbers.sort()
 
 # Counting sort
 # Time: n + k    Space: k
+def counting_sort(numbers):
+    if len(numbers) == 0:
+        return []
 
-# Radix sort
-# Time: nk       Space: n+k
+    minimum = min(numbers)
+    maximum = max(numbers)
+    count = [0] * (maximum - minimum + 1)
+
+    # Count occurrences
+    for value in numbers:
+        count[value - minimum] += 1
+
+    # Rebuild sorted list
+    result = []
+    for i in range(len(count)):
+        while count[i] > 0:
+            result.append(i + minimum)
+            count[i] -= 1
+
+    return result
 
 # Bucket sort
 # Time: n + k    Space: n
+def insertion_sort(numbers):
+    numbers = numbers.copy()
+
+    for i in range(1, len(numbers)):
+        current = numbers[i]
+        j = i - 1
+        while j >= 0 and numbers[j] > current:
+            numbers[j + 1] = numbers[j]
+            j -= 1
+        numbers[j + 1] = current
+
+    return numbers
+
+def bucket_sort(numbers, bucket_count=10):
+    if len(numbers) == 0:
+        return []
+
+    minimum = min(numbers)
+    maximum = max(numbers)
+    if minimum == maximum:
+        return numbers.copy()
+
+    buckets = [[] for _ in range(bucket_count)]
+    bucket_size = (maximum - minimum) / bucket_count
+    for value in numbers:
+        index = int((value - minimum) / bucket_size)
+        if index == bucket_count:
+            index -= 1
+        buckets[index].append(value)
+
+    result = []
+    for bucket in buckets:
+        result.extend(insertion_sort(bucket))
+
+    return result
 
 
