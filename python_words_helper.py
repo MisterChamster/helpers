@@ -80,6 +80,23 @@ print(next(fib))
 
 # =============== Errors ===============
 # try except finally raise assert
+# Useful raises:
+# ValueError, TypeError, NameError, IndexError, KeyError
+# AttributeError, ZeroDivisionError, FileNotFoundError
+# ModuleNotFoundError, AssertionError
+
+try:
+    file = open("data.txt")
+    print(file.read())
+except FileNotFoundError:
+    print("File not found.")
+finally:
+    print("Finished.")
+
+# assert - If condition is false raises AssertionError
+x = 10
+assert x > 0
+print("Success!")
 
 
 # =============== Vars/scope ===============
