@@ -3,6 +3,18 @@
 from typing import Literal as lit
 
 
+# =============== Class/function ===============
+# class def lambda
+square = lambda x: x * x
+print(square(5))
+
+students = [("Alice", 90), ("Bob", 75), ("Charlie", 85)]
+students.sort(key=lambda student: student[1])
+
+numbers = [1, 2, 3, 4]
+squares = list(map(lambda x: x * x, numbers))
+
+
 # =============== Logical Consts ===============
 # True (1)
 # False (0)
@@ -56,21 +68,29 @@ fib = fibonacci()
 print(next(fib))
 
 
-
-# =============== Class/function ===============
-# class def lambda
-
 # =============== Errors ===============
 # try except finally raise assert
+
 
 # =============== Vars/scope ===============
 # global nonlocal del
 
+
 # =============== With ===============
-# with
+# with - context managers.
+# (objects that automatically set something up and clean it up afterward)
+with open("data.txt", "r") as file:
+    text = file.read()
+
+import threading
+lock = threading.Lock()
+with lock:
+    print("Only one thread can execute this block.")
+
 
 # =============== Async ===============
 # async await
+
 
 # =============== Patterns ===============
 # match case
