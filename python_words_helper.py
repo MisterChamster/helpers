@@ -48,9 +48,19 @@ if a is c:
 
 # =============== Control flow ===============
 # if elif else
+# match case
 # for while break continue
 # pass
 # return yield
+note_freq = 440
+match note_freq:
+    case 440:
+        print("Note is A4")
+    case 415:
+        print("Note is A4 in baroque pitch")
+    case _:
+        print("Unknown note freq!")
+
 def count_to_three():
     yield 1
     yield 2
@@ -74,6 +84,30 @@ print(next(fib))
 
 # =============== Vars/scope ===============
 # global nonlocal del
+# global - global (module-level) variable inside a function
+count = 0
+def increment():
+    global count
+    count += 1
+
+increment()
+print(count)  # 1
+
+# nonlocal - nearest enclosing function, not the global scope
+def outer():
+    count = 0
+    def inner():
+        nonlocal count
+        count += 1
+    inner()
+outer()  # 1
+
+# del - deletes a variable or removes an item
+x = 10
+del x
+
+numbers = [10, 20, 30]
+del numbers[1]
 
 
 # =============== With ===============
@@ -86,12 +120,3 @@ import threading
 lock = threading.Lock()
 with lock:
     print("Only one thread can execute this block.")
-
-
-# =============== Async ===============
-# async await
-
-
-# =============== Patterns ===============
-# match case
-
