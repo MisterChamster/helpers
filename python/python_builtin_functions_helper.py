@@ -54,6 +54,42 @@ with open("out.txt", "w") as f:
 # ================= Type / object inspection =================
 # callable hasattr isinstance issubclass type id hash
 
+# callable - returns True if the object can be called like a function
+print(callable(len))        # True
+print(callable(42))         # False
+
+# hasattr - returns True if an object has a given attribute
+class Person:
+    name = "Ana"
+p = Person()
+print(hasattr(p, "name"))      # True
+print(hasattr(p, "age"))       # False
+print(hasattr(42, "__str__"))  # True
+
+# isinstance checks if object is an instance of a class
+print(isinstance(5, str))            # False
+print(isinstance(5, (int, float)))   # True
+
+# issubclass - checks if class is a subclass of another class
+class Animal:
+    pass
+class Dog(Animal):
+    pass
+print(issubclass(Dog, Animal))   # True
+print(issubclass(Animal, Dog))   # False
+print(issubclass(int, object))   # True
+
+# type - returns the type of an object
+print(type(5) is int)   # True
+
+# id - returns the identity of an object (int)
+x = 4
+print(id(x))
+
+# hash - returns a hash value for an object (can't be used in iterables)
+print(hash("hello"))
+print(hash("abc") == hash("abc"))   # True
+
 
 # ================= Sequence / iteration =================
 # iter next len list tuple set frozenset dict range slice enumerate reversed sorted zip map filter
