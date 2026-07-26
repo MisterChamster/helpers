@@ -22,13 +22,33 @@ print(bin(5))    # 0b101
 
 # ================= Booleans =================
 # bool all any
+# All returns True only if every item is truthy
+# Any returns True if at least one item is truthy
 
 
 # ================= Text =================
 # ascii chr format ord print repr str
+
+# ascii - function returns a readable version of any object.
+# Replaces any non-ascii characters with escape characters
+# å will be replaced with \xe5
+
+# chr - returns the character for a Unicode code point
+print(chr(65)) # A
+print(chr(97)) # a
+
+# format - formats a value according to a format specifier
+
+# ord - returns the Unicode code point of a single character
+print(ord("A"))   # 65
+
 # print(*objects, sep=' ', end='\n', file=None, flush=False)
 with open("out.txt", "w") as f:
     print("Saved text", file=f)
+
+# repr - official string representation of an object, meant to be unambiguous
+
+# str - readable string version of an object, meant for users
 
 
 # ================= Type / object inspection =================
