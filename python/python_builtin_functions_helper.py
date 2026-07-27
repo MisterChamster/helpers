@@ -113,9 +113,26 @@ print(hash("abc") == hash("abc"))   # True
 
 # ================= Binary data =================
 # bytes bytearray memoryview
+# bytes - immutable sequence of bytes
+data = bytes([65, 66, 67])
+print(data)        # b'ABC'
+print(data[0])     # 65
+
+# bytearray - mutable sequence of bytes
+data = bytearray([65, 66, 67])
+data[0] = 90
+print(data)        # bytearray(b'ZBC')
+
+# memoryview - aview into an existing bytes-like object without copying it
+data = bytearray(b"hello")
+view = memoryview(data)
+view[0] = ord("H")
+print(data)        # bytearray(b'Hello')
+print(view.tobytes())  # b'Hello'
 
 
 # ================= Async =================
 # aiter anext
-
+# aiter - gets an async iterator from an async iterable
+# anext - gets the next item from an async iterator
 
