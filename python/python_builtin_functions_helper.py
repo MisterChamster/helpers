@@ -105,6 +105,32 @@ print(hash("abc") == hash("abc"))   # True
 
 # ================= Execution / runtime =================
 # compile eval exec breakpoint __import__
+# compile() takes Python source code as text and turns it into a code object. 
+# A code object is an internal, executable form of the code that Python can run later
+# exec() executes it. And works for statements.
+source = """
+x = 10
+y = 20
+print(x + y)"""
+code = compile(source, "<string>", "exec")
+exec(code)
+
+# eval - takes a string containing a Python expression, evaluates it, and returns the result
+# Works for expressions, not statements!
+print(eval("2 + 3"))           # 5
+print(eval("len('hello')"))    # 5
+
+# breakpoint - super cool for debugging, stops program and lets you inspect current state
+# of program before moving further
+def divide(a, b):
+    breakpoint()
+    return a / b
+divide(10, 2)
+
+# __import__() is the low-level built-in import function that Python uses 
+# behind the scenes for import word
+math_module = __import__("math")
+print(math_module.sqrt(16))
 
 
 # ================= OOP =================
