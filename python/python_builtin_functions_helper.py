@@ -109,6 +109,51 @@ print(hash("abc") == hash("abc"))   # True
 
 # ================= OOP =================
 # classmethod staticmethod property super object
+# classmethod - receives class as argument. Good for alt contructors!
+class Dog:
+    def __init__(self, name):
+        self.name = name
+    @classmethod
+    def from_string(cls, text):
+        return cls(text)
+d = Dog.from_string("Doge")
+print(d.name)   # Doge
+
+# staticmethod - belongs to class namespace, but gets no automatic first argument
+class Math:
+    @staticmethod
+    def add(a, b):
+        return a + b
+print(Math.add(2, 3))   # 5
+
+# property - lets a method be accessed like an attribute
+class Person:
+    def __init__(self, first, last):
+        self.first = first
+        self.last = last
+    @property
+    def full_name(self):
+        return f"{self.first} {self.last}"
+p = Person("John", "Coltrane")
+print(p.full_name)   # John Coltrane
+
+# Super - returns a proxy object that lets you call methods from a parent class
+class Animal:
+    def __init__(self, name):
+        self.name = name
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)
+        self.breed = breed
+
+d = Dog("Buddy", "Labrador")
+print(d.name)   # Buddy
+print(d.breed)  # Labrador
+
+# object - base class that all classes inherit from
+class A:
+    pass
+print(issubclass(A, object))  # True
 
 
 # ================= Binary data =================
