@@ -97,10 +97,64 @@ print(hash("abc") == hash("abc"))   # True
 
 # ================= Attribute / scope =================
 # getattr setattr delattr dir globals locals vars help
+class Person:
+    name = "Alice"
+p = Person()
+print(getattr(p, "name"))   # basically p.name
+setattr(p, "name", "Bob")   # basically p.name = "Bob"
+delattr(p, "name")          # basically del p.name
+
+# dir - returns a list of an object's attributes and methods
+print(dir("hello"))   # ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+
+# globals - returns a dictionary containing the current global namespace
+x = 10
+print(globals()["x"])   # Read global var
+globals()["y"] = 20     # Create global var
+
+# locals - returns a dictionary containing the current local namespace
+def func():
+    x = 10
+    y = 20
+    print(locals())   # {'x': 10, 'y': 20}
+
+# vars - returns the __dict__ (attribute dictionary) of an object
+class Person:
+    def __init__(self):
+        self.name = "Alice"
+        self.age = 25
+p = Person()
+print(vars(p))  # {'name': 'Alice', 'age': 25}
+
+# help - displays documentation for an object
+help(len)
+# Help on built-in function len:
+# len(obj, /)
+#     Return the number of items in a container.
+def greet(name):
+    """Print a greeting."""
+    print(f"Hello, {name}!")
+
+class Dog:
+    """Represents a dog."""
+    def __init__(self, name):
+        self.name = name
 
 
 # ================= Files =================
 # input open
+# open - opens a file and returns a file object
+# Options:
+# "r"  - Read (default)
+# "w"  - Write (overwrite existing file)
+# "a"  - Append to the end of the file
+# "x"  - Create a new file (fails if it exists)
+# "rb" - Read binary
+# "wb" - Write binary
+# "ab" - Append binary
+# "r+" - Read and write
+with open("data.txt", "w") as file:
+    file.write("Hello!")
 
 
 # ================= Execution / runtime =================
