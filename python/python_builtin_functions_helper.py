@@ -93,6 +93,62 @@ print(hash("abc") == hash("abc"))   # True
 
 # ================= Sequence / iteration =================
 # iter next len list tuple set frozenset dict range slice enumerate reversed sorted zip map filter
+# iter - returns an iterator that remembers its current position for an iterable
+# next - returns the next item from an iterator
+numbers = [10, 20, 30]
+it = iter(numbers)
+print(next(it), "Done")   # 10
+print(next(it), "Done")   # 20
+print(next(it), "Done")   # 30
+print(next(it), "Done")   # "Done"
+
+# len - returns the number of items in an object
+# Works with __len__ in class
+print(len("hello"))
+print(len([1, 2, 3]))
+print(len((1, 2)))
+print(len({1, 2, 3}))
+print(len({"a": 1}))
+
+# list - creates a list or converts an iterable into a list
+# tuple - creates a tuple or converts an iterable into a tuple
+# set - creates a set or converts an iterable into a set
+print(list(range(5)))         # [0, 1, 2, 3, 4]
+
+# frozenset - creates an immutable set
+print(frozenset())
+print(frozenset([1, 2, 2, 3]))
+print(frozenset("hello"))
+
+# dict - creates a dictionary or converts key-value pairs into a dictionary
+print(dict())
+print(dict(a=1, b=2))
+pairs = [("a", 1), ("b", 2)]
+
+# range - creates a sequence of integers
+print(list(range(5)))            # [0, 1, 2, 3, 4]
+print(list(range(2, 6)))         # [2, 3, 4, 5]
+print(list(range(2, 10, 2)))     # [2, 4, 6, 8]
+print(list(range(5, 0, -1)))     # [5, 4, 3, 2, 1]
+
+# slice - Just slicing as function
+text = "Hello, world!"
+s = slice(0, 5)
+print(text[s])      # Hello
+
+# enumerate - returns an iterator of (index, value) pairs
+fruits = ["apple", "banana", "orange"]
+for i, fruit in enumerate(fruits):
+    print(i, fruit)
+for i, fruit in enumerate(fruits, start=3):   #Specified index
+    print(i, fruit)
+
+# reversed - returns an iterator that goes through a sequence in reverse order
+numbers = [1, 2, 3]
+for n in reversed(numbers):
+    print(n)
+
+
 
 
 # ================= Attribute / scope =================
