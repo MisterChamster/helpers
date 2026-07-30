@@ -148,7 +148,26 @@ numbers = [1, 2, 3]
 for n in reversed(numbers):
     print(n)
 
+# sorted - Returns a new sorted list from an iterable
+numbers = [3, 1, 2]
+print(sorted(numbers, reverse=True))
+print(sorted(numbers, key=len))
 
+# zip - Combines multiple iterables element by element
+# Stops when the shortest iterable ends
+# Alternative
+# from itertools import zip_longest
+# print(list(zip_longest([1, 2, 3], ["a"], fillvalue=None)))
+names = ["Alice", "Bob", "Charlie"]
+ages = [20, 25, 30]
+for name, age in zip(names, ages):
+    print(name, age)
+
+# map - Applies a function to every element of an iterable
+list(map(lambda x: x * 2, [1, 2, 3]))            # [2, 4, 6]
+
+# filter - Keeps only the elements for which a function returns True
+list(filter(lambda x: x % 2 == 0, [1, 2, 3, 4])) # [2, 4]
 
 
 # ================= Attribute / scope =================
