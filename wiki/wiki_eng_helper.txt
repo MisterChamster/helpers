@@ -91,9 +91,9 @@ Second column content
 
 
 {{ track listing
-| total_length    = 
-| title_width     = 50%
 | headline        = 
+| total_length    = 
+| title_width     = 67%
 
 | title1          = 
 | length1         = 
