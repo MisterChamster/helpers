@@ -4,6 +4,8 @@ Line break
 Line one<br>
 Line two
 
+{{small|Sample text}}
+
 
 Indentation
 : Indented text
@@ -94,6 +96,7 @@ Second column content
 | headline        = 
 | total_length    = 
 | title_width     = 67%
+| writing_width   = 
 
 | title1          = 
 | length1         = 
