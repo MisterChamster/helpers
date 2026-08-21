@@ -91,6 +91,10 @@ Second column content
 | all_lyrics      = 
 | all_music       = 
 
+| title3          = The White Rider"
+:a. "Nimrodel"
+:b. "The Procession"
+:c. "The White Rider
 
 {{ track listing
 | headline        = 
