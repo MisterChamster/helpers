@@ -4,7 +4,7 @@ Line break
 Line one<br>
 Line two
 
-{{small|Sample text}}
+{{small|Sample_text}}
 
 
 Indentation
