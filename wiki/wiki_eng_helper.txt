@@ -8,6 +8,7 @@ Line two
 {{small|}}
 
 {{hlist|Element1|Element2}}
+{{hlist||}}
 
 
 Indentation
@@ -84,7 +85,7 @@ Second column content
 
 | extra_column    = 
 
-| title_width     = 
+| title_width     = 67%
 | writing_width   = 
 | music_width     = 
 | lyrics_width    = 
@@ -102,7 +103,7 @@ Second column content
 {{ track listing
 | headline        = 
 | total_length    = 
-| title_width     = 67%
+| title_width     = 
 | writing_width   = 
 
 | title1          = 
