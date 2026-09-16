@@ -67,3 +67,9 @@ print(f"{42:#06x}")       # '0x002a'
 print(f"{1234567:,}")     # '1,234,567'
 print(f"{3.14159:10.2f}") # '      3.14'
 print(f"{'hi':*^10}")     # '****hi****'
+
+name = "Alice"
+age = 18
+print("Name:", name, "Age:", age)
+print("2026", "09", "16", sep="-")
+print("Hello", end=" ")
