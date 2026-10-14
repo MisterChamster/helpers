@@ -45,6 +45,7 @@ echo "alias imgw='/home/root-username/scripts/img-worker.sh'" >> ~/.bashrc
 echo "alias aimg='/home/root-username/scripts/img-to-audio.sh'" >> ~/.bashrc
 
 source ~/.bashrc
+source ~/.zshrc
 
 
 cd "$HOME"
